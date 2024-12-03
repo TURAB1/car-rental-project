@@ -6,11 +6,14 @@ const Footer = () => {
   return (
     <div className='footer'>
         
-            <Link to="/" className='links'>Home</Link>
-       
-            <Link to="/services" className='links'>services</Link>
-       
-            <Link to="/contact" className='links'>Contact us</Link>
+        <Link to="/" className='links'>Home</Link>
+        <Link to="/about" className='links'>About</Link>
+
+        <Link to="/cars" className='links'>Cars</Link>
+
+        <Link to="/blog" className='links'>Blog</Link>
+
+        <Link to="/contact" className='links'>Contact</Link>
 
     </div>
   )
