@@ -1,0 +1,23 @@
+.header{
+    background-color: #000d6b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    top:0;
+    position: fixed;
+    left: 0;
+    right:0
+  
+    
+}
+.links-style{
+    display: flex;
+    flex-direction: 'row';
+    justify-content: space-between;
+    width: 30%;
+}
+.links-style a:hover{
+    color:coral
+  }
