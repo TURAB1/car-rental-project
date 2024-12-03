@@ -1,16 +1,18 @@
 import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Contact from '../pages/Contact'
-import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
-import Services from '../pages/Services'
-
+import About from '../pages/About'
+import Cars from '../pages/Cars'
+import Blog from '../pages/Blog'
 
 const Routers = () => {
   return (
       <Routes>
         <Route path="/" element={<Home/>}/>
-          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/cars" element={<Cars />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
        

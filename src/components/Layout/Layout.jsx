@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Routers from '../../routers/Routers'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import "../../styles/layout.css"
 const Layout = () => {
     return (
         <BrowserRouter>
