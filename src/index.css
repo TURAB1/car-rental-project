@@ -15,3 +15,18 @@
 .search-box{
   background-color:brown;
 }
+.btn {
+  padding: 7px 15px;
+  background: #000d6b;
+  color: #fff;
+  border:#fff;
+  outline: none;
+  border-radius: 5px;
+ 
+}
+
+.btn:hover {
+  color: #fff !important;
+  background: #000c6bd0;
+}
+

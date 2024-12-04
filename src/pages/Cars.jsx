@@ -1,10 +1,18 @@
 import React from 'react'
+import carData from '../assets/data/carData'
+import { Container } from 'reactstrap'
 
 const Cars= () => {
   return (
+    <Container>
     <div>
-      <p>Cars</p>
+      {
+        carData.map((item,index)=>{
+          return<p>{item.brand}</p>
+        })
+      }
     </div>
+    </Container>
   )
 }
 

@@ -1,29 +1,50 @@
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
+
 }
-.background-car-image{
-    background-image: url(../assets/all-images/cars-img/tesla.jpg);
+
+.background-car-image {
+    background:linear-gradient(rgba(31, 31, 95, 0.5),rgba(75, 75, 117, 0.5)), url(../assets/all-images/cars-img/tesla.jpg);
     max-width: 100%;
     height: 650px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: fixed;
+    position: relative;
     left: 0;
-    right:0
+    right: 0
 }
 
-.discount-content{
-    padding-top:150px;
+.discount-content {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
-.text-light{
-    color:aliceblue
-    
+
+.text-light {
+    color: aliceblue
 }
-.find-cars-left{
-    color:blue
+
+.find-cars-left {
+    background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
+        url(../assets/all-images/cars-img/toyota-offer-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 35px;
 }
-.car-left-container{
-    padding-top: 100px;
+
+.car-left-container {
+    padding-top: 80px;
+}
+.cars-left-form{
+    background-color: aliceblue;
+}
+.btn-reserve{
+text-decoration: none;
+background-color: aliceblue;
+width: 120px;
+border-radius: 3px;
+border: none;
 }
