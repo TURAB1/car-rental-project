@@ -1,17 +1,25 @@
 import React from 'react'
 import carData from '../assets/data/carData'
-import { Container } from 'reactstrap'
+import { Container, Col, Row } from 'reactstrap'
+import CarItem from '../UI/CarItem'
 
-const Cars= () => {
+const Cars = () => {
   return (
     <Container>
-    <div>
-      {
-        carData.map((item,index)=>{
-          return<p>{item.brand}</p>
-        })
-      }
-    </div>
+   
+       <Row>
+          <div>
+            {
+              carData.map((item, index) => {
+                return (
+                  <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} />
+
+                )
+              })
+            }
+          </div>
+       
+        </Row>
     </Container>
   )
 }

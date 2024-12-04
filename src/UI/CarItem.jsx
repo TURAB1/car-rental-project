@@ -1,10 +1,15 @@
 import React from 'react'
+import { Container ,Col} from 'reactstrap'
 
-const CarItem = () => {
+const CarItem = ({imgUrl,carName,price}) => {
   return (
-    <div>
-      
-    </div>
+    <Col lg="12">
+
+      <img src={imgUrl} alt='car' />
+      <h1>{carName}</h1>
+      <h2>${price}/Day</h2>
+    </Col>
+
   )
 }
 
