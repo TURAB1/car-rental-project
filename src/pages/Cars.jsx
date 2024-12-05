@@ -8,7 +8,7 @@ const Cars = () => {
     <Container>
    
        <Row>
-          <div>
+          
             {
               carData.map((item, index) => {
                 return (
@@ -17,7 +17,7 @@ const Cars = () => {
                 )
               })
             }
-          </div>
+        
        
         </Row>
     </Container>

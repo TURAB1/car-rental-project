@@ -1,17 +1,19 @@
 import React from 'react'
 import blogData from '../assets/data/blogData'
-import { Container} from 'reactstrap'
+import { Container,Row} from 'reactstrap'
+import BlogItem from '../UI/BlogItem'
+
 
 const Blog = () => {
   return (
     <Container>
-    <div>
+    <Row>
             {
         blogData.map((item,index)=>{
-          return<p>{item.title}</p>
+          return <BlogItem title={item.title} description={item.description}/>
         })
       }
-    </div>
+    </Row>
    
     </Container>
   )
