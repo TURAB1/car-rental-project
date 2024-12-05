@@ -1,17 +1,17 @@
 import React from 'react'
 import { Col, Row, Container } from 'reactstrap'
 import bmw from "../assets/all-images/cars-img/bmw-offer.png"
-
+import "../styles/about.css"
 
 const About = () => {
   return (
-    <div>
-      <Container>
+    <div >
+      <Container className='about-container' >
         <Row>
           <Col>
-            <h2>About us</h2>
-            <h1>Welcome to car rent service</h1>
-            <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eligendi ad error, soluta assumenda nihil illo quasi nam facilis rerum, quas eum fugiat a aspernatur. Molestias odio aperiam assumenda asperiores.</h6>
+            <h2 className='text-color'>About us</h2>
+            <h1 className='sub-text-color'>Welcome to car rent service</h1>
+            <h4 className='about-container'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eligendi ad error, soluta assumenda nihil illo quasi nam facilis rerum, quas eum fugiat a aspernatur. Molestias odio aperiam assumenda asperiores.</h4>
 
           </Col>
           <Col>

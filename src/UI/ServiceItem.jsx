@@ -5,8 +5,8 @@ const ServicesItem = ({title,desc}) => {
   return (
     <Col lg="4" md="6">
 
-      <h2>{title}</h2>
-      <h3>{desc}</h3>
+      <h4 className='sub-text-color'>{title}</h4>
+      <h5>{desc}</h5>
 
     </Col>
   )

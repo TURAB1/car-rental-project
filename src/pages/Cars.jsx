@@ -6,20 +6,23 @@ import CarItem from '../UI/CarItem'
 const Cars = () => {
   return (
     <Container>
-   
-       <Row>
-          
-            {
-              carData.map((item, index) => {
-                return (
-                  <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} />
+      <Row>
+        <h2 className='text-color'>Come With</h2>
+        <h1 className='sub-text-color'>Hot Offers</h1>
+      </Row>
+      <Row>
 
-                )
-              })
-            }
-        
-       
-        </Row>
+        {
+          carData.map((item, index) => {
+            return (
+              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} />
+
+            )
+          })
+        }
+
+
+      </Row>
     </Container>
   )
 }

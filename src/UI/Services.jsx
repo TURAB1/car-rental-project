@@ -8,6 +8,10 @@ import ServicesItem from './ServiceItem'
 const Services = () => {
     return (
         <Container>
+         <Row>
+         <h2 className='text-color'>See Our</h2>
+            <h1 className='sub-text-color'>Popular Services</h1>    
+        </Row>   
         <Row>
             {
                 serviceData.map((item, index) => {
