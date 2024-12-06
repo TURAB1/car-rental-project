@@ -4,9 +4,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 80px;
     top:0;
-    position: fixed;
+    position:fixed;
     left: 0;
     right:0
   
@@ -21,3 +21,6 @@
 .links-style a:hover{
     color:coral
   }
+.burger-icon{
+   color:#000d6b 
+}

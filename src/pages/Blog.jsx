@@ -6,7 +6,7 @@ import BlogItem from '../UI/BlogItem'
 
 const Blog = () => {
   return (
-    <Container>
+    <Container className='page-margin'>
       <Row>
         <h2 className='text-color'>Explore our blogs</h2>
         <h1 className='sub-text-color'>Latest Blogs</h1>

@@ -5,7 +5,7 @@ import CarItem from '../UI/CarItem'
 
 const Cars = () => {
   return (
-    <Container>
+    <Container className='page-margin'>
       <Row>
         <h2 className='text-color'>Come With</h2>
         <h1 className='sub-text-color'>Hot Offers</h1>
