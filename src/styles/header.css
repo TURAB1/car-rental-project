@@ -12,6 +12,9 @@
   
     
 }
+.header-routes a:hover{
+    color:coral  
+}
 .links-style{
     display: flex;
     flex-direction: 'row';

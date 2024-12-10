@@ -1,10 +1,10 @@
 
 import Layout from './components/Layout/Layout';
-
+import UserContext from './UI/UserContext';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
     <Layout/>
     </div>
   );

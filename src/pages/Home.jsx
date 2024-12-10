@@ -42,7 +42,6 @@ const Home = () => {
             <Cars/>
             <Blog/>
           
-           
         </div>
     )
 }

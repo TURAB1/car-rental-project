@@ -1,22 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
+import { carContext } from '../../UI/UserContext'
 
 const Header = () => {
+  const {searchInput,setSearchInputCar}=useContext(carContext)
+  useEffect(()=>{
+    console.log("input:"+searchInput)
+
+  },[searchInput])
   return (
    <div className='header'>
-    {/*    <div className='links-style'>
-         <Link to="/" className='links'>Home</Link>
-         <Link to="/about" className='links'>About</Link>
 
-         <Link to="/cars" className='links'>Cars</Link>
-
-         <Link to="/blog" className='links'>Blog</Link>
-
-         <Link to="/contact" className='links'>Contact</Link>
-       </div> */}
       <Container>
-        <Row>
+        <Row className='header-routes'>
           <Col>
           <Link to="/" className='links'>Home</Link>          
           </Col>
@@ -34,7 +31,10 @@ const Header = () => {
           </Col>
           <Col>
           <div className="search-box">
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" 
+        value={searchInput}
+        onChange={(e)=>setSearchInputCar(e.target.value)}
+        />
         <span>
           <i class="ri-search-line"></i>
         </span>

@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import { Rating } from 'react-simple-star-rating'
+import ContactForm from '../UI/ContactForm'
+import { Container } from 'reactstrap'
 const Contact = () => {
     const [rating,setRating]=useState(0)
    
@@ -11,8 +13,8 @@ const Contact = () => {
     const onPointerLeave=()=>console.log("Leave")
     const onPointerMove=(value,index)=>console.log(value,index)
   return (
-    <div className='page-margin'>
-      contact us
+    <Container className='page-margin'>
+      <ContactForm/>
       <p>
         Rate us
       </p>
@@ -23,10 +25,8 @@ const Contact = () => {
         onPointerMove={onPointerMove}
         /* Available Props */
       />
-      <p>
-      <span>{rating}</span>
-      </p>
-    </div>
+
+    </Container>
   )
 }
 
