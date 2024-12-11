@@ -33,6 +33,9 @@ const Header = () => {
             <Link to="/blog" className='links'>Blog</Link>
           </Col>
           <Col>
+            <Link to="/cart" className='links'>Cart</Link>
+          </Col>
+          <Col>
             <Link to="/contact" className='links'>Contact</Link>
 
           </Col>

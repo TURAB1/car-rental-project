@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Col, Button} from 'reactstrap'
 import "../styles/car-item.css"
 const CarItem = ({imgUrl,carName,price}) => {
-  const [itemsNumber,setItemsNumber]=useState(1)
+  const [itemsNumber,setItemsNumber]=useState(0)
   const increaseItem=()=>{
      setItemsNumber(itemsNumber+1)
   }

@@ -23,7 +23,6 @@ const Search = () => {
     <Container className='page-margin'>
       <Row >
         <h1 className='sub-text-color'>Search Results</h1>
-        <h1 className='sub-text-color'>{searchInput}</h1>
         
       </Row>
       <Row>
