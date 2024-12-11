@@ -11,7 +11,6 @@ const Cars = () => {
         <Search/>
         <h2 className='text-color'>Come With</h2>
         <h1 className='sub-text-color'>Hot Offers</h1>
-     
         
       </Row>
       <Row>

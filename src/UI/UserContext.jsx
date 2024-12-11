@@ -4,9 +4,10 @@ const UserContext = (props) => {
        
        const [name,setName]=useState("chris")
        const [searchInput,setSearchInput]=useState("tesla")
-       const setSearchInputCar=()=>{
+       const setSearchInputCar=(searchInput)=>{
         setSearchInput(searchInput)
-        console.log("func called")
+        console.log("input:"+searchInput)
+      
        }
        const contextValues={
         searchInput,setSearchInputCar

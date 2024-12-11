@@ -27,3 +27,7 @@
 .burger-icon{
    color:#000d6b 
 }
+.search-box{
+    display: flex;
+    align-items: center; 
+}
