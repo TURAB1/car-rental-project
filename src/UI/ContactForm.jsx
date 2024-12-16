@@ -34,7 +34,7 @@ const ContactForm = () => {
                 </Col>
                 <Col>
                     <FormText>
-                        if you ahve any complain or inquiry <br></br>
+                        if you have any complain or inquiry <br></br>
                         write to us.<br></br>
                         email:chris@torahware.com
                     </FormText>

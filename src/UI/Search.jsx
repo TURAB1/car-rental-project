@@ -18,7 +18,6 @@ const Search = () => {
     setFilteredUsers(filteredItems);
   },[searchInput])
 
-
   return (
     <Container className='page-margin'>
       <Row >
@@ -30,12 +29,11 @@ const Search = () => {
         {
           filteredItems.map((item, index) => {
             return (
-              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} />
+              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
 
             )
           })
         }
-
 
       </Row>
 

@@ -16,7 +16,7 @@ const Cars = () => {
         {
           carData.map((item, index) => {
             return (
-              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} />
+              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
 
             )
           })
