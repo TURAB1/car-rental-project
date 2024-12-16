@@ -9,7 +9,7 @@ const Cart = () => {
     <div className='page-margin'>
           <div className="cart">
          {carData.map((item) => {
-          if (cartItems[item.id] === 0) {
+          if (cartItems[item.id] !== 0) {
             return  <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
           }
           return null

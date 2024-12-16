@@ -24,14 +24,14 @@ const CarItem = ({imgUrl,carName,price,id}) => {
       <div className='btn-rent'>
        <Button color="primary">Rent</Button>
        <Button color='warning'>Details</Button>
-       <Button onClick={(id)=>removeFromCart(id)} className='reduce-btn'>-</Button>
+       <Button onClick={()=>removeFromCart(id)} className='reduce-btn'>-</Button>
        {/* <Button className='item-number' outline disabled>{ (cartItems[id],id)=>updateCartItemCount(items,id) }</Button>  */}
        <Input 
        type="text"
        value={cartItems[id]}
        onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
        />
-       <Button onClick={(id)=>addToCart(id)}>+</Button>
+       <Button onClick={()=>addToCart(id)}>+</Button>
        
        </div>
     </Col>
