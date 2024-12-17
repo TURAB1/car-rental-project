@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Container } from 'reactstrap';
 import carData from '../assets/data/carData';
 import CarItem from '../UI/CarItem';
 import { carContext } from '../UI/UserContext';
@@ -6,7 +7,7 @@ const Cart = () => {
   const{cartItems,setCartItems}=useContext(carContext)
   console.log("cart:"+cartItems)
   return (
-    <div className='page-margin'>
+    <Container className='page-margin'>
           <div className="cart">
          {carData.map((item) => {
           if (cartItems[item.id] !== 0) {
@@ -15,7 +16,7 @@ const Cart = () => {
           return null
         })} 
       </div>
-    </div>
+    </Container>
   )
 }
 

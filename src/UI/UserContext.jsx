@@ -23,19 +23,22 @@ const UserContext = (props) => {
        }
        const addToCart = (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-         console.log("cartArray:"+JSON.stringify(cartItems));
+        
       };
     
       const removeFromCart = (itemId) => {
-        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+        if(cartItems[itemId]!==0)
+          setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
       };
 
       const updateCartItemCount = (newAmount, itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+        console.log("cartArray:"+JSON.stringify(cartItems));
       }; 
 
        const contextValues={
         searchInput,setSearchInputCar,cartItems,addToCart,removeFromCart,updateCartItemCount
+        
        }
      
   return (
