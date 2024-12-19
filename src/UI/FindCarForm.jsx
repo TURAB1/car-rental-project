@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "../styles/find-car-form.css";
 
-import { Form, FormGroup } from "reactstrap";
+import { Alert, Form, FormGroup } from "reactstrap";
 
 const FindCarForm = () => {
   const[departureAddress,setDepartureAdress]=useState()
@@ -9,9 +9,16 @@ const FindCarForm = () => {
   const [date,setDate] =useState()
   const [time,setTime] =useState()
   const [carType,setcarType]=useState()
+
+  const handleSubmit=(e)=>{
+        // Prevent the browser from reloading the page
+        e.preventDefault();
+        Alert(time)
+        console.log(departureAddress);
+  }
   
   return (
-    <Form className="form">
+    <Form className="form" onSubmit={handleSubmit}>
       <div className=" d-flex align-items-center justify-content-between flex-wrap">
         <FormGroup className="form__group">
           <input type="text" 
@@ -68,8 +75,8 @@ const FindCarForm = () => {
         </FormGroup>
 
         <FormGroup className="form__group">
-          <button className="find__car-btn">Find Car</button>
-        </FormGroup>
+          <button className="find__car-btn" type="submit">Find Car</button>
+        </FormGroup> 
       </div>
     </Form>
   );

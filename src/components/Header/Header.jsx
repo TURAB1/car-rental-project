@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState,useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 import { RiSearchLine } from '@remixicon/react'
@@ -7,6 +7,8 @@ import { carContext } from '../../UI/UserContext'
 
 const Header = () => {
   const { searchInput, setSearchInputCar } = useContext(carContext)
+  const input=useRef();
+
 //   useEffect(() => {
 // setSearchInputCar(searchInput)
 //   }, [searchInput])

@@ -14,7 +14,10 @@ const Cart = () => {
             return  <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
           }
           return null
-        })} 
+        }
+        
+        )}
+    
       </div>
     </Container>
   )
