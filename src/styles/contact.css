@@ -1,0 +1,25 @@
+.left-contact{
+    background-color: #616ab1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.right-contact{
+    height: 700px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;  
+}
+#text-input{
+        border-color: black;
+}
+.contact-container{
+    box-shadow: 10px 10px;
+    margin-bottom: 30px;
+}
+.btn-send-message{
+    background-color: blue;
+}

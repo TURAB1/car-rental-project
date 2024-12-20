@@ -7,4 +7,8 @@ background-color: black;
 } 
 .reduce-btn{
   margin-left: 5px;
+}
+#car-count{
+  border-color: black;
+  width: 50px;
 } 

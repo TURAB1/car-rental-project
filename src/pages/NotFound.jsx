@@ -1,10 +1,11 @@
 import React from 'react'
+import { Container } from 'reactstrap'
 
 const NotFound = () => {
   return (
-    <div>
+    <Container className='page-margin'>
       <p>not found 404 error</p>
-    </div>
+    </Container>
   )
 }
 
