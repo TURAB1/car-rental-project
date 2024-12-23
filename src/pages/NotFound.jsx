@@ -4,7 +4,7 @@ import { Container } from 'reactstrap'
 const NotFound = () => {
   return (
     <Container className='page-margin'>
-      <p>not found 404 error</p>
+      <p >page not found 404 error</p>
     </Container>
   )
 }

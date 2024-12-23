@@ -71,6 +71,7 @@ const FindCarForm = () => {
         </FormGroup>
         <FormGroup className="select__group">
           <select
+            style={{}}
             value={carType}
             onChange={(e) => {
               setcarType(e.target.value)

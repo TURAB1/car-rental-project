@@ -8,6 +8,7 @@ import Cars from '../pages/Cars'
 import Blog from '../pages/Blog'
 import Search from '../UI/Search'
 import Cart from '../pages/Cart'
+import CarDetails from '../UI/CarDetails'
 
 const Routers = () => {
   return (
@@ -15,6 +16,7 @@ const Routers = () => {
         <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/cars" element={<Cars />} />
+          <Route path="/cars/:slug" element={<CarDetails />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/contact" element={<Contact />} />
