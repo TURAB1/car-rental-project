@@ -14,8 +14,8 @@ const Search = () => {
 
   
   useEffect(()=>{
-    console.log("global value:;"+searchInput)
     setFilteredUsers(filteredItems);
+    console.log("filteredusers:"+JSON.stringify(filteredUsers))
   },[searchInput])
 
   return (
@@ -25,14 +25,18 @@ const Search = () => {
         
       </Row>
       <Row>
-
         {
+        filteredUsers?
+        
           filteredItems.map((item, index) => {
             return (
               <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
 
             )
           })
+      :
+        
+        <h1>No matching results</h1>
         }
 
       </Row>

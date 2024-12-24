@@ -5,9 +5,9 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { carContext } from './UserContext'
 const CarItem = ({imgUrl,carName,price,id}) => {
-  const [itemsNumber,setItemsNumber]=useState(0)
   const {cartItems,addToCart,removeFromCart,updateCartItemCount}=useContext(carContext)
   const navigate=useNavigate();
+
   return (
     <Col lg="4" md="6">
 

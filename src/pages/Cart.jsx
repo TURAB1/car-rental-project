@@ -5,21 +5,13 @@ import CarItem from '../UI/CarItem';
 import { carContext } from '../UI/UserContext';
 const Cart = () => {
   const { cartItems, setCartItems } = useContext(carContext)
-  const [isCartEmpty, setIsCartEmpty] = useState(0)
-  console.log("cart:" + cartItems)
 
-  // useEffect(() => {
-  // setIsCartEmpty(carData.every((item) => item == 0))
-  // for (let i = 1; i < carData.length + 1; i++) {
-  //   if (cartItems[i] == 0)
-      
-    
-  // }
+  const isCartEmpty = Object.keys(cartItems).length === 0 || Object.values(cartItems).every((quantity) => quantity === 0);
   
-  //  console("is cart empty:"+isCartEmpty)
-  // }, [cartItems])
   return (
     <Container className='page-margin'>
+      {
+      !isCartEmpty?
       <div className="cart">
         {carData.map((item) => {
           if (cartItems[item.id] !== 0) {
@@ -30,7 +22,8 @@ const Cart = () => {
 
         )}
 
-      </div>
+      </div>:<h1>Cart is empty</h1>
+     }
     </Container>
   )
 }

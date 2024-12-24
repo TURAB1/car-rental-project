@@ -12,3 +12,11 @@ background-color: black;
   border-color: black;
   width: 50px;
 } 
+.pay-btn {
+  background: #000d6b !important;
+  color: #fff !important;
+  padding: 8px 15px;
+  width: 50px;
+  border: none;
+  outline: none;
+}
