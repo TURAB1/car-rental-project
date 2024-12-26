@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "../styles/find-car-form.css";
 
-import { Alert, Form, FormGroup } from "reactstrap";
+import { Form, FormGroup } from "reactstrap";
 
 const FindCarForm = () => {
-  const [departureAddress, setDepartureAdress] = useState()
-  const [destinationAddress, setDestinationAddress] = useState()
-  const [date, setDate] = useState()
-  const [time, setTime] = useState()
-  const [carType, setcarType] = useState()
+  const [departureAddress, setDepartureAdress] = useState("")
+  const [destinationAddress, setDestinationAddress] = useState("")
+  const [date, setDate] = useState("")
+  const [time, setTime] = useState("")
+  const [carType, setcarType] = useState("automatic")
 
   const handleSubmit = (e) => {
     // Prevent the browser from reloading the page
@@ -64,6 +64,7 @@ const FindCarForm = () => {
             onChange={(e) => {
               setTime(e.target.value)
               console.log(e.target.value)
+            
             }
 
             }
@@ -71,7 +72,6 @@ const FindCarForm = () => {
         </FormGroup>
         <FormGroup className="select__group">
           <select
-            style={{}}
             value={carType}
             onChange={(e) => {
               setcarType(e.target.value)

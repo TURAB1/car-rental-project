@@ -1,6 +1,6 @@
 import React from 'react'
 import carData from '../assets/data/carData'
-import { Container, Row ,Button} from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 import CarItem from '../UI/CarItem'
 
 const Cars = () => {
@@ -16,7 +16,7 @@ const Cars = () => {
         {
           carData.map((item, index) => {
             return (
-              <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
+              <CarItem key={index} imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
 
             )
           })

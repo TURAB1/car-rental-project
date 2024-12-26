@@ -1,10 +1,10 @@
-import React, { useContext, useEffect,useState } from 'react'
+import React, { useContext } from 'react'
 import { Container } from 'reactstrap';
 import carData from '../assets/data/carData';
 import CarItem from '../UI/CarItem';
 import { carContext } from '../UI/UserContext';
 const Cart = () => {
-  const { cartItems, setCartItems } = useContext(carContext)
+  const { cartItems} = useContext(carContext)
 
   const isCartEmpty = Object.keys(cartItems).length === 0 || Object.values(cartItems).every((quantity) => quantity === 0);
   
@@ -13,9 +13,9 @@ const Cart = () => {
       {
       !isCartEmpty?
       <div className="cart">
-        {carData.map((item) => {
+        {carData.map((item,index) => {
           if (cartItems[item.id] !== 0) {
-            return <CarItem imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
+            return <CarItem key={index} imgUrl={item.imgUrl} carName={item.carName} price={item.price} id={item.id} />
           }
           return null
         }

@@ -14,7 +14,7 @@ const Blog = () => {
       <Row>
         {
           blogData.map((item, index) => {
-            return <BlogItem title={item.title} description={item.description} />
+            return <BlogItem key={index} title={item.title} description={item.description} />
           })
         }
       </Row>

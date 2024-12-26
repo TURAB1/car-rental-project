@@ -15,7 +15,7 @@ const Services = () => {
         <Row>
             {
                 serviceData.map((item, index) => {
-                    return <ServicesItem title={item.title} desc={item.desc}/>
+                    return <ServicesItem key={index} title={item.title} desc={item.desc}/>
                 })
             }
         </Row>    

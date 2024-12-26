@@ -1,5 +1,4 @@
 import React ,{useContext}from 'react'
-import { useNavigate } from 'react-router-dom';
 import { Container, Col, Row, Button,Input } from 'reactstrap'
 import { useParams } from 'react-router-dom';
 import carData from '../assets/data/carData';
@@ -11,7 +10,7 @@ const CarDetails = () => {
 
     const singleCarItem = carData.find((item) => item.carName === slug);
     const {cartItems,addToCart,removeFromCart,updateCartItemCount}=useContext(carContext)
-    const navigate=useNavigate();
+    //const navigate=useNavigate();
   
 
     return (
@@ -40,7 +39,7 @@ const CarDetails = () => {
 
             </Row>
             <Row>
-            <div className='btn-rent'>
+            <div className='btn-items-count'>
                 <Button onClick={() => removeFromCart(singleCarItem.id)} className='reduce-btn'>-</Button>
                 {/* <Button className='item-number' outline disabled>{ (cartItems[id],id)=>updateCartItemCount(items,id) }</Button>  */}
                 <Input
@@ -52,7 +51,9 @@ const CarDetails = () => {
                 <Button onClick={() => addToCart(singleCarItem.id)}>+</Button>
                
                 </div>
+                <div className='pay-btn-container'>
                 <button className="pay-btn" >Pay</button>
+                </div>
             </Row>
         </Container>
     )

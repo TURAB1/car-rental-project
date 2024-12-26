@@ -1,9 +1,21 @@
-.pay-btn {
+
+  .btn-items-count{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pay-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:30px
+  }
+  .pay-btn {
     background: #000d6b !important;
     color: #fff !important;
     padding: 8px 15px;
-    
+    margin-top:10px;
+    width: 110px;
     border: none;
     outline: none;
   }
-  
