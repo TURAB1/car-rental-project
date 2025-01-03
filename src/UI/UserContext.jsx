@@ -12,9 +12,9 @@ const getDefaultCart = () => {
 };
 const UserContext = (props) => {
        
-       const [name,setName]=useState("chris")
        const [searchInput,setSearchInput]=useState("")
        const [cartItems, setCartItems] = useState(getDefaultCart());
+      
       
        const setSearchInputCar=(searchInput)=>{
         setSearchInput(searchInput)
@@ -35,9 +35,19 @@ const UserContext = (props) => {
         setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
         console.log("cartArray:"+JSON.stringify(cartItems));
       }; 
+      const getTotalCartAmount = () => {
+        let totalAmount = 0;
+        for (const item in cartItems) {
+          if (cartItems[item] > 0) {
+            let itemInfo = carData.find((product) => product.id === Number(item));
+            totalAmount += cartItems[item] * itemInfo.price;
+          }
+        }
+        return totalAmount;
+      };
 
        const contextValues={
-        searchInput,setSearchInputCar,cartItems,addToCart,removeFromCart,updateCartItemCount
+        searchInput,setSearchInputCar,cartItems,addToCart,removeFromCart,updateCartItemCount,getTotalCartAmount
         
        }
      
