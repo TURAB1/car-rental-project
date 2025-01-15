@@ -8,10 +8,9 @@ import Cars from './Cars'
 import Blog from './Blog'
 import Services from '../UI/Services'
 const Home = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)})
+
     return (
-        <div className='home-container'>
+        <div className='home-container' >
 
             <div className='background-car-image'>
                 <Container>

@@ -29,7 +29,7 @@ const Header = () => {
 
   const routes = [
     { label: 'Home', path: '/', options: [{ label: 'scroll test', path: '/home/option1' }, { label: 'Modal test', path: '/home/option2' }, { label: 'News', path: '/home/option3' }] },
-    { label: 'About', path: '/about', options: [{ label: 'Option 1', path: '/about/option1' }, { label: 'Option 2', path: '/about/option2' }, { label: 'Option 3', path: '/about/option3' }] },
+    { label: 'About', path: '/about', options: [{ label: 'Chart', path: '/about/chart' }, { label: 'Option 2', path: '/about/option2' }, { label: 'Option 3', path: '/about/option3' }] },
     { label: 'Cars', path: '/cars', options: [{ label: '3D view', path: '/car/3d' }, { label: 'Option 2', path: '/car/option2' }, { label: 'Option 3', path: '/car/option3' }] },
     { label: 'Blog', path: '/blog', options: [{ label: 'Option 1', path: '/blog/option1' }, { label: 'Option 2', path: '/blog/option2' }, { label: 'Option 3', path: '/blog/option3' }] },
     { label: 'Cart', path: '/cart', options: [{ label: 'Option 1', path: '/cart/option1' }, { label: 'Option 2', path: '/cart/option2' }, { label: 'Option 3', path: '/cart/option3' }] },

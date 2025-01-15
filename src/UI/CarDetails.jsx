@@ -1,4 +1,4 @@
-import React ,{useContext}from 'react'
+import React ,{useContext,useEffect}from 'react'
 import { Container, Col, Row, Button,Input,Label,Form } from 'reactstrap'
 import { useParams } from 'react-router-dom';
 import carData from '../assets/data/carData';
@@ -12,7 +12,9 @@ const CarDetails = () => {
     const {cartItems,addToCart,removeFromCart,updateCartItemCount,totalPrice}=useContext(carContext)
     //const navigate=useNavigate();
   
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [singleCarItem]);
     return (
         <Container className='page-margin'>
             <Row>

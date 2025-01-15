@@ -8,7 +8,7 @@ import "../../styles/layout.css"
 const Layout = () => {
     return (
         <BrowserRouter>
-        <UserContext>
+        <UserContext >
             <div>
                 <Header />
             </div>

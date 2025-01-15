@@ -13,6 +13,7 @@ import ScrollTest from '../UI/ScrollTest'
 import ModalTest from '../UI/ModalTest'
 import News from '../UI/News'
 import View3D from '../UI/View3D'
+import Chart from '../UI/Chart'
 const Routers = () => {
   return (
     <Routes>
@@ -21,6 +22,7 @@ const Routers = () => {
       <Route path="/home/option2" element={<ModalTest />} />
       <Route path="/home/option3" element={<News />} />
       <Route path="/about" element={<About />} />
+      <Route path="/about/chart" element={<Chart />} />
       <Route path="/cars" element={<Cars />} />
       <Route path="/cars/:slug" element={<CarDetails />} />
       <Route path="/car/3d" element={<View3D />} />

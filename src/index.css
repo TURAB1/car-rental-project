@@ -55,3 +55,8 @@ body {
 canvas {
   display: block;
 }
+
+.layout{
+  height:100vh;
+  overflow-y: scroll;
+}
