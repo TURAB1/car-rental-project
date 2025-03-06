@@ -6,10 +6,10 @@
     align-items: center;
     height: 80px;
     top:0;
-    position:fixed;
+    position:relative;
     left: 0;
-    right:0
-  
+    right:0;
+    z-index: 1000;
     
 }
 .header-routes a:hover{
@@ -39,9 +39,7 @@
     background-color:#f1f1f1;
     box-shadow: 0 8px 16px rgba(121, 30, 30, 0.2);
     z-index: 1;
-    width:100%;
-  
-    
+ 
   }
   
   .header .dropdown-item {

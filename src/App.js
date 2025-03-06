@@ -4,7 +4,7 @@ import UserContext from './UI/UserContext';
 
 function App() {
   return (
-    <div className="">
+    <div className="layout">
     <Layout/>
     </div>
   );

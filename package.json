@@ -3,16 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.120.6",
+    "@react-three/fiber": "^8.17.10",
     "@remixicon/react": "^4.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.7",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "faker": "^5.5.3",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
+    "react-modal": "^3.16.3",
     "react-scripts": "5.0.1",
     "react-simple-star-rating": "^5.1.7",
     "reactstrap": "^9.2.3",
+    "three": "^0.172.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "@types/faker": "^5.5.9",
     "react-router-dom": "^7.0.1"
   }
 }

@@ -36,3 +36,27 @@
 .page-margin{
   margin-top: 80px;
 }
+.dropDownContainer{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+
+}
+body {
+  margin: 0;
+  background-color: #111;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.layout{
+  height:100vh;
+  overflow-y: scroll;
+}

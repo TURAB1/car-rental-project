@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import "../styles/home.css"
 import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
@@ -8,8 +8,9 @@ import Cars from './Cars'
 import Blog from './Blog'
 import Services from '../UI/Services'
 const Home = () => {
+
     return (
-        <div className='home-container'>
+        <div className='home-container' >
 
             <div className='background-car-image'>
                 <Container>

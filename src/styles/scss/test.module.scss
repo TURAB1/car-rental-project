@@ -1,0 +1,10 @@
+
+@import "./variable.scss";
+@import "./mixins.scss";
+.test {
+    color: $my-color;
+    @include important-text;
+    &__sub{
+    border: 1px solid blue;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Row, Container } from 'reactstrap'
 import bmw from "../assets/all-images/cars-img/bmw-offer.png"
 import "../styles/about.css"
+import ScrollTest from '../UI/ScrollTest'
 
 const About = () => {
   return (

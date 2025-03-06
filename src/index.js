@@ -5,6 +5,9 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+console.ignoreWarnings = [/Failed to parse source map/];
+
 root.render(
   <React.StrictMode>
     <App />
