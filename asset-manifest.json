@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car-rental-project/static/css/main.3948544f.css",
-    "main.js": "/car-rental-project/static/js/main.96b5691b.js",
+    "main.js": "/car-rental-project/static/js/main.00368e2c.js",
     "static/media/bmw-offer.png": "/car-rental-project/static/media/bmw-offer.ecfb9ac1bf7b5ef615a6.png",
     "static/media/blog-1.jpg": "/car-rental-project/static/media/blog-1.e4949dd1d3e0ec0543c5.jpg",
     "static/media/nissan-offer.png": "/car-rental-project/static/media/nissan-offer.6eddc86310b7cac538ae.png",
@@ -15,6 +15,6 @@
   },
   "entrypoints": [
     "static/css/main.3948544f.css",
-    "static/js/main.96b5691b.js"
+    "static/js/main.00368e2c.js"
   ]
 }
